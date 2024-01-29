@@ -1,0 +1,98 @@
+@media (min-width: 576px) {
+  #form {
+    display: flex !important; }
+
+  #form-text {
+    width: 30% !important; }
+
+  #projects {
+    display: flex; }
+    #projects .project-card {
+      max-width: 25vw; } }
+* {
+  color: white; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background: rgba(0, 0, 0, 0.95); }
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden; }
+
+@keyframes hide {
+  from {
+    transform: rotate(-40deg) translate3d(360px, 0, 0);
+    opacity: 0.8; }
+  to {
+    transform: rotate(-40deg) translate3d(-360px, 0, 0);
+    opacity: 0; } }
+#heading {
+  margin: 0 50px;
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+  filter: drop-shadow(0 0 0.95rem blue); }
+  #heading #pages {
+    font-size: 20px; }
+  #heading #socials {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    font-size: 50px; }
+
+#scroll {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  text-align: center; }
+
+#section-container {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  max-width: 95vw; }
+
+#projects {
+  margin: 0 10px;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  #projects .project-card {
+    margin-bottom: 30px;
+    border: 1px solid white;
+    overflow: hidden;
+    border-radius: 15px; }
+    #projects .project-card img {
+      width: 100%; }
+
+#form {
+  margin: 0 10px; }
+  #form #form-text {
+    width: 100%; }
+  #form #get-in-touch {
+    width: 100%;
+    height: 100%; }
+    #form #get-in-touch input, #form #get-in-touch textarea {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      background-color: gray; }
+      #form #get-in-touch input::placeholder, #form #get-in-touch textarea::placeholder {
+        color: white; }
+    #form #get-in-touch #first-last-name {
+      display: flex;
+      width: 100%; }
+
+textarea {
+  resize: none; }
+
+/*# sourceMappingURL=styles.css.map */

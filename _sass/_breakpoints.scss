@@ -1,0 +1,14 @@
+@media (min-width: 576px) {
+    #form {
+        display: flex !important;
+    }
+    #form-text {
+        width: 30% !important;
+    }
+    #projects {
+        display: flex;
+        .project-card {
+            max-width: 25vw;
+        }
+    }
+}   
