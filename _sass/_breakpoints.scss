@@ -8,7 +8,14 @@
     #projects {
         display: flex;
         .project-card {
-            max-width: 25vw;
+            max-width: 35vw;
         }
     }
 }   
+
+
+@media (min-width: 992px) {
+    .project-card {
+        max-width: 25vw !important;
+    }
+} 
