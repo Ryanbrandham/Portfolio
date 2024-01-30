@@ -1,7 +1,7 @@
 var board = document.getElementsByClassName('.container');
 
 function draw() {
-    setInterval(createStars, 30); 
+    setInterval(createStars, 75); 
     setInterval(starFall, 3000); 
     var canvas = document.getElementById("nightSky");
     var art = canvas.getContext("2d");
@@ -21,11 +21,11 @@ function createStars() {
         const createNewStar = document.getElementById('starsSmall');
         const star = document.createElement('div');
         createNewStar.innerHTML = star.outerHTML;
+        star.className = 'glow'
+
         star.style.left = Math.random() * window.innerWidth + 'px';
         star.style.backgroundColor = "white";
         star.style.top =  Math.random() * window.innerHeight + 'px';
-        star.style.width =  Math.floor(Math.random() * 3) + 'px';
-        star.style.height =  Math.floor(Math.random() * 3) + 'px';
         star.style.position =  "absolute";
         star.style.zIndex = "-1";
         document.body.appendChild(star);

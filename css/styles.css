@@ -38,6 +38,21 @@
 @media (min-width: 992px) {
   .project-card {
     width: 25vw !important; } }
+body {
+  background-color: black;
+  font-family: cursive; }
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate; }
+
+@keyframes glow {
+  from {
+    box-shadow: 3px 2px 1px 0px white; }
+  to {
+    box-shadow: 6px 4px 2px 1px #3412cc; } }
 a {
   text-decoration: none; }
 
@@ -51,8 +66,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: clip;
-  background: rgba(0, 0, 0, 0.95);
-  position: fixed; }
+  background: rgba(0, 0, 0, 0.95); }
 
 #wrapper {
   overflow-x: hidden; }
