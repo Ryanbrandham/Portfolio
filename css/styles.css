@@ -1,12 +1,9 @@
-@font-face {
-  font-family: Spartan;
-  src: url(../assets/fonts/LeagueSpartan-Bold.otf); }
 @media (min-width: 576px) {
   #heading {
     top: 50px;
-    font-size: 40px !important; }
+    font-size: 30px !important; }
     #heading #pages {
-      margin-bottom: 180px;
+      margin-bottom: 250px;
       width: 100% !important; }
       #heading #pages a {
         font-size: 35px;
@@ -43,8 +40,7 @@
   .project-card {
     width: 25vw !important; } }
 body {
-  background-color: black;
-  font-family: Spartan; }
+  background-color: black; }
 
 .glow {
   font-size: 80px;
