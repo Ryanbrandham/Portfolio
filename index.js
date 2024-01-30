@@ -1,7 +1,7 @@
 var board = document.getElementsByClassName('.container');
 
 function draw() {
-    setInterval(createStars, 75); 
+    setInterval(createStars, 30); 
     setInterval(starFall, 3000); 
     var canvas = document.getElementById("nightSky");
     var art = canvas.getContext("2d");
