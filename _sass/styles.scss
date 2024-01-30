@@ -49,8 +49,10 @@ body {
     filter: drop-shadow(0 0 0.95rem blue);
     #pages {
         width: 80vw;
-        font-size: 20px;
+        font-size: 22px;
         text-align: center;
+        padding-bottom: 20px;
+        
         a {
             margin: 5px;
 
@@ -74,8 +76,8 @@ body {
 
 
 #section-container {
-    margin-right: auto;
-    margin-left: auto;
+    margin: 50px auto 0 auto;
+    padding-bottom: 20px;
     text-align: center;
     max-width: 95vw;
 
@@ -86,12 +88,17 @@ body {
     margin: 0 10px;
 
     .project-card {
+        font-size: 20px;
         margin-bottom: 30px;
+        background-color: rgb(12, 12, 12);
         border: 1px solid white;
         overflow: hidden;
         border-radius: 15px;
         img {
             width: 100%;
+        }
+        span {
+            vertical-align: top;
         }
     }
 
@@ -99,7 +106,7 @@ body {
 
 
 #form {
-
+    margin: 30px 0;
     #form-text {
         width: 100%;
     }
@@ -107,6 +114,7 @@ body {
         width: 100%;
         height: 100%;
         input, textarea {
+            border: 1px solid black;
             display: block;
             width: 100%;
             box-sizing: border-box;
