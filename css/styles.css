@@ -100,7 +100,8 @@ body {
   position: absolute;
   bottom: 0;
   color: white;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 20px; }
   #scroll span {
     font-size: 30px; }
 
