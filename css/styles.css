@@ -1,19 +1,36 @@
+@media (max-width: 575px) {
+  #projects .project-card {
+    width: 100%; } }
 @media (min-width: 576px) {
   #form {
-    display: flex !important; }
+    display: flex; }
 
   #form-text {
-    width: 30% !important; }
+    width: 30%;
+    margin: 0 40px; }
 
   #projects {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
     #projects .project-card {
-      max-width: 35vw; } }
+      width: 35vw; }
+    #projects img {
+      width: 100%; }
+
+  #get-in-touch {
+    margin-right: 30px; } }
 @media (min-width: 992px) {
   .project-card {
-    max-width: 25vw !important; } }
+    width: 25vw !important; } }
+a {
+  text-decoration: none; }
+
 * {
   color: white; }
+
+html {
+  overflow-x: hidden !important; }
 
 body {
   width: 100vw;
@@ -44,7 +61,10 @@ body {
   text-align: center;
   filter: drop-shadow(0 0 0.95rem blue); }
   #heading #pages {
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: center; }
+    #heading #pages a {
+      margin: 5px; }
   #heading #socials {
     display: flex;
     margin-top: 20px;
@@ -64,9 +84,7 @@ body {
   max-width: 95vw; }
 
 #projects {
-  margin: 0 10px;
-  flex-wrap: wrap;
-  justify-content: space-around; }
+  margin: 0 10px; }
   #projects .project-card {
     margin-bottom: 30px;
     border: 1px solid white;
@@ -76,10 +94,8 @@ body {
       width: 100%; }
 
 #form #form-text {
-  width: 100%;
-  margin: 0 40px; }
+  width: 100%; }
 #form #get-in-touch {
-  margin-right: 30px;
   width: 100%;
   height: 100%; }
   #form #get-in-touch input, #form #get-in-touch textarea {
@@ -94,6 +110,8 @@ body {
   #form #get-in-touch #first-last-name {
     display: flex;
     width: 100%; }
+  #form #get-in-touch #submit-button {
+    width: 15vw; }
 
 textarea {
   resize: none; }

@@ -36,7 +36,6 @@ function createStars() {
 
 function starFall() {
     const fall = document.getElementById("fallingStar");
-    const createFall = document.createElement('div');
     fall.innerHTML = createFall.outerHTML;
     createFall.style.position = "absolute";
     function randomNumber(min, max) {

@@ -1,21 +1,41 @@
+
+@media (max-width: 575px) {
+    #projects {
+    
+        .project-card {
+            width: 100%;
+        }
+    }
+}
+
 @media (min-width: 576px) {
     #form {
-        display: flex !important;
+        display: flex;
     }
     #form-text {
-        width: 30% !important;
+        width: 30%;
+        margin: 0 40px;
     }
     #projects {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
         .project-card {
-            max-width: 35vw;
+            width: 35vw;
+        }
+        img {
+            width: 100% ;
         }
     }
+    #get-in-touch {
+        margin-right: 30px;
+    }
+    
 }   
 
 
 @media (min-width: 992px) {
     .project-card {
-        max-width: 25vw !important;
+        width: 25vw !important;
     }
 } 
