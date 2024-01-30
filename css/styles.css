@@ -6,11 +6,9 @@
     top: 50px;
     font-size: 40px !important; }
     #heading #pages {
-      text-wrap: wrap;
       margin-bottom: 180px;
       width: 100% !important; }
       #heading #pages a {
-        text-wrap: nowrap;
         font-size: 35px;
         margin: 40px !important; }
 
@@ -101,6 +99,7 @@ body {
   text-align: center;
   filter: drop-shadow(0 0 0.95rem blue); }
   #heading #pages {
+    text-wrap: wrap;
     width: 80vw;
     font-size: 18px;
     text-align: center;
@@ -108,7 +107,8 @@ body {
     line-height: 50px;
     filter: drop-shadow(0 0 0.95rem blue); }
     #heading #pages a {
-      margin: 5px; }
+      margin: 5px;
+      text-wrap: nowrap; }
     #heading #pages :hover {
       filter: drop-shadow(0 0 0.95rem blue); }
   #heading #socials {

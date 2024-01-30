@@ -91,6 +91,7 @@ body {
     text-align: center;
     filter: drop-shadow(0 0 0.95rem blue);
     #pages {
+        text-wrap: wrap;
         width: 80vw;
         font-size: 18px;
         text-align: center;
@@ -98,6 +99,8 @@ body {
         line-height: 50px;
         a {
             margin: 5px;
+            text-wrap: nowrap;
+
         }
         filter: drop-shadow(0 0 0.95rem blue);
         :hover {
