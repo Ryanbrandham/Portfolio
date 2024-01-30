@@ -53,6 +53,9 @@ body {
   overflow-x: clip;
   background: rgba(0, 0, 0, 0.95); }
 
+#wrapper {
+  overflow-x: hidden; }
+
 .container {
   width: 100vw;
   height: 100vh;
