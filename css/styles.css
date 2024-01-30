@@ -1,6 +1,18 @@
 @media (min-width: 576px) {
+  #heading {
+    top: 50px;
+    font-size: 40px !important; }
+    #heading #pages {
+      margin-bottom: 180px; }
+      #heading #pages a {
+        font-size: 40px;
+        margin: 40px !important; }
+
   #socials {
-    justify-content: space-evenly !important; }
+    justify-content: space-evenly !important;
+    font-size: 40px !important;
+    width: 50%;
+    margin: 0 auto; }
 
   #form {
     display: flex; }
@@ -58,6 +70,7 @@ body {
     transform: rotate(-40deg) translate3d(-360px, 0, 0);
     opacity: 0; } }
 #heading {
+  top: 30px;
   margin: 0 50px;
   font-size: 20px;
   position: absolute;
@@ -67,16 +80,23 @@ body {
     width: 80vw;
     font-size: 22px;
     text-align: center;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    line-height: 50px;
+    filter: drop-shadow(0 0 0.95rem blue); }
     #heading #pages a {
       margin: 5px; }
+    #heading #pages :hover {
+      filter: drop-shadow(0 0 0.95rem blue); }
   #heading #socials {
     display: flex;
-    margin-top: 20px;
+    margin-top: 0px;
     justify-content: space-around;
-    font-size: 50px; }
+    font-size: 20px; }
+    #heading #socials :hover {
+      filter: drop-shadow(0 0 0.95rem blue); }
 
 #scroll {
+  font-size: 30px;
   position: absolute;
   bottom: 0;
   color: white;

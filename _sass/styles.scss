@@ -42,6 +42,7 @@ body {
 
 
 #heading {
+    top: 30px;
     margin: 0 50px;
     font-size: 20px;
     position: absolute;
@@ -52,22 +53,29 @@ body {
         font-size: 22px;
         text-align: center;
         padding-bottom: 20px;
-        
+        line-height: 50px;
         a {
             margin: 5px;
-
+        }
+        filter: drop-shadow(0 0 0.95rem blue);
+        :hover {
+            filter: drop-shadow(0 0 0.95rem blue);
         }
     }
     #socials {
         display: flex;
-        margin-top: 20px;
+        margin-top: 0px;
         justify-content: space-around;
-        font-size: 50px;
+        font-size: 20px;
+        :hover {
+            filter: drop-shadow(0 0 0.95rem blue);
+        }
     }
 
 }
 
 #scroll {
+    font-size: 30px;
     position: absolute;
     bottom: 0;
     color: white;

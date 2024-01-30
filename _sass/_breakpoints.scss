@@ -1,6 +1,20 @@
 @media (min-width: 576px) {
+    #heading {
+        top: 50px;
+        font-size: 40px !important;
+        #pages {
+            margin-bottom: 180px;
+            a {
+                font-size: 40px;
+                margin: 40px !important;
+            }
+        }
+    }
     #socials {
         justify-content: space-evenly !important;
+        font-size: 40px !important;
+        width: 50%;
+        margin: 0 auto;
     }
     #form {
         display: flex;
