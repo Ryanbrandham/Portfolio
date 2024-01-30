@@ -1,11 +1,17 @@
+@font-face {
+  font-family: Spartan;
+  src: url(../assets/fonts/LeagueSpartan-Bold.otf); }
 @media (min-width: 576px) {
   #heading {
     top: 50px;
     font-size: 40px !important; }
     #heading #pages {
-      margin-bottom: 180px; }
+      text-wrap: wrap;
+      margin-bottom: 180px;
+      width: 100% !important; }
       #heading #pages a {
-        font-size: 40px;
+        text-wrap: nowrap;
+        font-size: 35px;
         margin: 40px !important; }
 
   #socials {
@@ -40,7 +46,7 @@
     width: 25vw !important; } }
 body {
   background-color: black;
-  font-family: cursive; }
+  font-family: Spartan; }
 
 .glow {
   font-size: 80px;
@@ -90,13 +96,13 @@ body {
 #heading {
   top: 30px;
   margin: 0 50px;
-  font-size: 20px;
+  font-size: 17px;
   position: absolute;
   text-align: center;
   filter: drop-shadow(0 0 0.95rem blue); }
   #heading #pages {
     width: 80vw;
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
     padding-bottom: 20px;
     line-height: 50px;
@@ -114,7 +120,7 @@ body {
       filter: drop-shadow(0 0 0.95rem blue); }
 
 #scroll {
-  font-size: 28px;
+  font-size: 25px;
   position: absolute;
   bottom: 35px;
   color: white;
