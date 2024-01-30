@@ -9,13 +9,13 @@ a {
 }
 
 html {
-    overflow-x: hidden !important;
+    overflow-x: clip;
 }
 
 body {
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
+    overflow-x: clip;
     background: rgba(0, 0, 0, 0.95);
 }
 

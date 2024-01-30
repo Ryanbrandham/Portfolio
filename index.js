@@ -2,7 +2,7 @@ var board = document.getElementsByClassName('.container');
 
 function draw() {
     setInterval(createStars, 30); 
-    setInterval(starFall, 1000); 
+    setInterval(starFall, 3000); 
     var canvas = document.getElementById("nightSky");
     var art = canvas.getContext("2d");
     art.beginPath();
@@ -36,8 +36,9 @@ function createStars() {
 
 function starFall() {
     const fall = document.getElementById("fallingStar");
+    const createFall = document.createElement('div');
     fall.innerHTML = createFall.outerHTML;
-    createFall.style.position = "absolute";
+    createFall.style.position = "fixed";
     function randomNumber(min, max) {
     return Math.random() * (max - min) + min;
     }
