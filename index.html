@@ -20,8 +20,13 @@
 
 
     <body onload="draw()">
+        
         <div class="container" id="wrapper">
-            <div id="heading">
+            <div id="top-nav">
+                <div>
+                    <a href="#">Ryan Brandham</a>
+                </div>
+
                 <div id="pages">
                     <a href="about-me.html">About Me</a>
                     <a href="#section-container">My Portfolio</a>
@@ -29,6 +34,35 @@
                     <a href="scs-scheme.html">SCS Scheme</a>
                     <a href="#get-in-touch">Contact Me</a>
                 </div>
+            </div>
+
+            <button onclick="opensidebar()" id="sidebar-button-open"><span class="material-symbols-outlined">menu</span></button>
+            <button onclick="closesidebar()" id="sidebar-button-close"><span class="material-symbols-outlined">close</span></button> 
+
+            <script>
+                function opensidebar() {
+                    document.getElementById("sidebar-button-open").style.display = 'none';
+                    document.getElementById("sidebar").style.display = 'flex';
+                    document.getElementById("sidebar-button-close").style.display = "inline-block";
+            
+                }
+                function closesidebar() {
+                    document.getElementById("sidebar-button-open").style.display = "inline-block";
+                    document.getElementById("sidebar").style.display = 'none';
+                    document.getElementById("sidebar-button-close").style.display = "none";
+                }
+            </script>
+
+            <div id="sidebar">
+                <a href="about-me.html">About Me</a>
+                <a href="#section-container">My Portfolio</a>
+                <a href="coding-examples.html">Coding Examples</a>
+                <a href="scs-scheme.html">SCS Scheme</a>
+                <a href="#get-in-touch">Contact Me</a>
+            </div>
+
+            <div id="heading">
+
                 <h1>My name is Ryan Brandham</h1>
                 <h2>I am a web developer</h2>
 

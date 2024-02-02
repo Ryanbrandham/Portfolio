@@ -1,21 +1,21 @@
 @media (min-width: 576px) {
+    #sidebar-button-open, #sidebar-button-close, #sidebar { 
+        display: none !important;
+    }
+    #top-nav {
+        display: flex !important;
+    }
     #heading {
-        top: 50px;
         font-size: 30px !important;
-        #pages {
-            margin-bottom: 25vh !important;
-            width: 100% !important;
-            a {
-                font-size: 35px;
-                margin: 40px !important;
-            }
-        }
     }
     #socials {
         justify-content: space-evenly !important;
         font-size: 40px !important;
         width: 50%;
         margin: 0 auto;
+    }
+    #scroll {
+        bottom: 0 !important;
     }
     #form {
         display: flex;
@@ -38,10 +38,14 @@
     #get-in-touch {
         margin-right: 30px;
     }
-    #pages {
-        font-size: 30px !important;
+    #top-nav {
+        top: 0vh;
+        position: fixed;
+        a {
+            font-size: 20px;
+            margin: 30px;
+        }
     }
-    
 }   
 
 
