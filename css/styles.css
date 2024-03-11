@@ -125,19 +125,22 @@ body {
   display: none; }
 
 #sidebar {
-  display: none;
+  transform: translateY(-60vw);
   top: 0;
   z-index: 100;
   background-color: #04041d;
-  position: fixed;
+  display: flex;
+  position: absolute;
   width: 100vw;
-  left: 0;
   height: 30vh;
   flex-direction: column;
   justify-content: space-evenly; }
   #sidebar a {
     text-align: center;
     font-size: 22px; }
+  #sidebar.active {
+    transform: translateX(0vw);
+    transition: 0.5s ease; }
 
 #heading {
   top: 30vh;

@@ -38,8 +38,7 @@
                 </div>
             </div>
 
-            <button onclick="opensidebar()" id="sidebar-button-open"><span class="material-symbols-outlined">menu</span></button>
-            <button onclick="closesidebar()" id="sidebar-button-close"><span class="material-symbols-outlined">close</span></button> 
+            <button id="sidebar-button-open"><span class="material-symbols-outlined">menu</span></button>
 
             <script>
                 function opensidebar() {
@@ -55,7 +54,7 @@
                 }
             </script>
 
-            <div id="sidebar" class="animsition">
+            <div id="sidebar" class="">
                 <a href="about-me.html" class="animsition-link">About Me</a>
                 <a href="#section-container" class="animsition-link">My Portfolio</a>
                 <a href="coding-examples.html" class="animsition-link">Coding Examples</a>
@@ -198,7 +197,17 @@
         <script src="javascript/animsition.js"></script>
         <script src="javascript/animate-typing/jquery.animateTyping.js"></script>
         <script src="javascript/sticky/jquery.sticky.js"></script>
+        <script>$("#sidebar-button-open").on("click", function() {
+            $("#sidebar").toggleClass("active")
+            if($("#sidebar").hasClass("active")) {
+                $("#sidebar-button-open").html('<span class="material-symbols-outlined">close</span>');
 
+            }
+            else {
+                $("#sidebar-button-open").html('<span class="material-symbols-outlined">menu</span>');
 
+            }
+        })
+        </script>
     </body>
 </html>
