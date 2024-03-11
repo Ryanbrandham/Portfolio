@@ -1,4 +1,34 @@
+const firstName = document.getElementById("first-name")
+const lastName = document.getElementById("last-name")
+const email = document.getElementById("email")
+const subject = document.getElementById("subject")
+const message = document.getElementById("message")
+const form = document.getElementById("get-in-touch")
+const errorElement = document.getElementById("error")
+
 var board = document.getElementsByClassName('.container');
+form.addEventListener("submit", (e) => {
+    let messages = []
+    if(firstName.value === "") {
+        messages.push("First name is required")
+    }
+    if(lastName.value === "") {
+        messages.push("Last name is required")
+    }
+    if(email.value === "") {
+        messages.push("Email is required")
+    }
+    if(subject.value === "") {
+        messages.push("Subject is required")
+    }
+    if(message.value === "") {
+        messages.push("A message is required")
+    }
+    if (messages.length > 0) {
+        e.preventDefault()
+        errorElement.innerText = messages.join(", ")
+    }
+})
 
 function draw() {
     setInterval(createStars, 30); 
@@ -58,3 +88,4 @@ function starFall() {
     createFall.style.animation =
       "hide 1s linear infinite alternate";
 }
+

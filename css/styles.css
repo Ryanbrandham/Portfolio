@@ -146,6 +146,8 @@ body {
   position: absolute;
   text-align: center;
   filter: drop-shadow(0 0 0.95rem blue); }
+  #heading h1 {
+    width: auto; }
   #heading #socials {
     display: flex;
     margin-top: 0px;

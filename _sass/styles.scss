@@ -143,6 +143,9 @@ body {
     text-align: center;
     filter: drop-shadow(0 0 0.95rem blue);
 
+    h1 {
+        width: auto;
+    }
     #socials {
         display: flex;
         margin-top: 0px;
