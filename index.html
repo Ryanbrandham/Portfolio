@@ -19,9 +19,11 @@
 
 
 
-
+    <div>
     <body onload="draw()" class="animsition">
-        
+        <canvas id="nightSky"></canvas>
+        <div id="starsSmall"></div>
+        <div id="fallingStar"></div>
         <div class="container" id="wrapper">
             
             <div id="top-nav" class="is-sticky">
@@ -107,9 +109,7 @@
                     <span class="material-symbols-outlined">keyboard_arrow_down</span>
                 </a>
             </div>
-        <canvas id="nightSky"></canvas>
-        <div id="starsSmall"></div>
-        <div id="fallingStar"></div>
+
         </div>
 
         <div id="section-container">
@@ -176,13 +176,13 @@
                 <form id="get-in-touch" action="/" method="GET">
                     <div id="error"></div>
                     <div id="first-last-name">
-                        <input id="first-name" type="text" placeholder="First Name*">
-                        <input id="last-name" type="text" placeholder="Last Name*">
+                        <input required id="first-name" type="text" placeholder="First Name*">
+                        <input required id="last-name" type="text" placeholder="Last Name*">
                     </div>
-                    <input id="email" type="email" placeholder="Email Address*">
-                    <input id="subject" type="text" placeholder="Subject">
-                    <textarea id="message" placeholder="Message"></textarea>
-                    <input id="submit-button" type="submit" placeholder="Submit" class="animsition-link">
+                    <input required id="email" type="email" placeholder="Email Address*">
+                    <input required id="subject" type="text" placeholder="Subject">
+                    <textarea required id="message" placeholder="Message"></textarea>
+                    <input  id="submit-button" type="submit" placeholder="Submit" class="animsition-link">
                 </form>
             </div>
             <br>
@@ -190,24 +190,25 @@
                 <a href="#" id="back-to-top"><span class="material-symbols-outlined">keyboard_arrow_up</span>
                 <br>Back To Top</a>
             </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js" integrity="sha512-pYd2QwnzV9JgtoARJf1Ui1q5+p1WHpeAz/M0sUJNprhDviO4zRo12GLlk4/sKBRUCtMHEmjgqo5zcrn8pkdhmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="javascript/index.js"></script>
+            <script src="javascript/animsition.js"></script>
+            <script src="javascript/animate-typing/jquery.animateTyping.js"></script>
+            <script src="javascript/sticky/jquery.sticky.js"></script>
+            <script>$("#sidebar-button-open").on("click", function() {
+                $("#sidebar").toggleClass("active")
+                if($("#sidebar").hasClass("active")) {
+                    $("#sidebar-button-open").html('<span class="material-symbols-outlined">close</span>');
+
+                }
+                else {
+                    $("#sidebar-button-open").html('<span class="material-symbols-outlined">menu</span>');
+
+                }
+            })
+            </script>
         </div>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js" integrity="sha512-pYd2QwnzV9JgtoARJf1Ui1q5+p1WHpeAz/M0sUJNprhDviO4zRo12GLlk4/sKBRUCtMHEmjgqo5zcrn8pkdhmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="javascript/index.js"></script>
-        <script src="javascript/animsition.js"></script>
-        <script src="javascript/animate-typing/jquery.animateTyping.js"></script>
-        <script src="javascript/sticky/jquery.sticky.js"></script>
-        <script>$("#sidebar-button-open").on("click", function() {
-            $("#sidebar").toggleClass("active")
-            if($("#sidebar").hasClass("active")) {
-                $("#sidebar-button-open").html('<span class="material-symbols-outlined">close</span>');
-
-            }
-            else {
-                $("#sidebar-button-open").html('<span class="material-symbols-outlined">menu</span>');
-
-            }
-        })
-        </script>
     </body>
 </html>

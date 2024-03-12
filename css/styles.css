@@ -41,7 +41,10 @@
     position: fixed; }
     #top-nav a {
       font-size: 20px;
-      margin: 30px; } }
+      margin: 30px; }
+
+  #socials {
+    width: 375.594px; } }
 @media (min-width: 992px) {
   .project-card {
     width: 25vw !important; } }
@@ -67,7 +70,6 @@ html {
 
 body {
   width: 100vw;
-  height: 100vh;
   overflow-x: clip;
   background: rgba(0, 0, 0, 0.99); }
 
